@@ -20,8 +20,7 @@ datasets with credit.
 
 All data that was ingested has been preserved here,
 but I highly recommend if you are not using my processed data to instead receive
-the data from their original sources (and cite them appropriately). All figures
-will denote where the data has come from. 
+the data from their original sources. All figures will denote where the data has come from. 
 
 ## Figures
 
