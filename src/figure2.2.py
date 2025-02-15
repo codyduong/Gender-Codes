@@ -39,43 +39,43 @@ read_params_skip2["skipfooter"] = 2
 ## DIGEST OF EDUCATION STATISTICS
 
 ## NCES DATA
-bachelors1999_00 = pd.read_excel("./data/raw/fig2.2/Bachelors1999-00.xlsx", engine="calamine", skiprows=3, skipfooter=2)
-bachelors2000_01 = pd.read_excel("./data/raw/fig2.2/Bachelors2000-01.xlsx", **read_params_skip2)
-bachelors2001_02 = pd.read_excel("./data/raw/fig2.2/Bachelors2001-02.xlsx", **read_params_skip2)
+bachelors1999_00 = pd.read_excel("../data/raw/fig2.2/Bachelors1999-00.xlsx", engine="calamine", skiprows=3, skipfooter=2)
+bachelors2000_01 = pd.read_excel("../data/raw/fig2.2/Bachelors2000-01.xlsx", **read_params_skip2)
+bachelors2001_02 = pd.read_excel("../data/raw/fig2.2/Bachelors2001-02.xlsx", **read_params_skip2)
 params_override = read_params_skip3.copy()
 params_override["skipfooter"] = 6
-bachelors2002_03 = pd.read_excel("./data/raw/fig2.2/Bachelors2002-03.xlsx", **params_override)
-bachelors2003_04 = pd.read_excel("./data/raw/fig2.2/Bachelors2003-04.xlsx", **read_params_skip2)
-bachelors2004_05 = pd.read_excel("./data/raw/fig2.2/Bachelors2004-05.xlsx", **read_params_skip2)
+bachelors2002_03 = pd.read_excel("../data/raw/fig2.2/Bachelors2002-03.xlsx", **params_override)
+bachelors2003_04 = pd.read_excel("../data/raw/fig2.2/Bachelors2003-04.xlsx", **read_params_skip2)
+bachelors2004_05 = pd.read_excel("../data/raw/fig2.2/Bachelors2004-05.xlsx", **read_params_skip2)
 bachelors2004_05.at[1, "Total"] = 1_439_264
-bachelors2005_06 = pd.read_excel("./data/raw/fig2.2/Bachelors2005-06.xlsx", **read_params_skip2)
-bachelors2006_07 = pd.read_excel("./data/raw/fig2.2/Bachelors2006-07.xlsx", **read_params_skip3)
-bachelors2007_08 = pd.read_excel("./data/raw/fig2.2/Bachelors2007-08.xlsx", **read_params_skip5)
-bachelors2008_09 = pd.read_excel("./data/raw/fig2.2/Bachelors2008-09.xlsx", **read_params_skip9)
-bachelors2009_10 = pd.read_excel("./data/raw/fig2.2/Bachelors2009-10.xlsx", **read_params_skip5)
-bachelors2010_11 = pd.read_excel("./data/raw/fig2.2/Bachelors2010-11.xlsx", **read_params_skip3)
-bachelors2011_12 = pd.read_excel("./data/raw/fig2.2/Bachelors2011-12.xlsx", **read_params_skip4)
+bachelors2005_06 = pd.read_excel("../data/raw/fig2.2/Bachelors2005-06.xlsx", **read_params_skip2)
+bachelors2006_07 = pd.read_excel("../data/raw/fig2.2/Bachelors2006-07.xlsx", **read_params_skip3)
+bachelors2007_08 = pd.read_excel("../data/raw/fig2.2/Bachelors2007-08.xlsx", **read_params_skip5)
+bachelors2008_09 = pd.read_excel("../data/raw/fig2.2/Bachelors2008-09.xlsx", **read_params_skip9)
+bachelors2009_10 = pd.read_excel("../data/raw/fig2.2/Bachelors2009-10.xlsx", **read_params_skip5)
+bachelors2010_11 = pd.read_excel("../data/raw/fig2.2/Bachelors2010-11.xlsx", **read_params_skip3)
+bachelors2011_12 = pd.read_excel("../data/raw/fig2.2/Bachelors2011-12.xlsx", **read_params_skip4)
 # weird data formatting in this xlsx
 bachelors2012_13 = pd.read_excel(
-  "./data/raw/fig2.2/Bachelors2012-13.xlsx", engine="calamine", skiprows=4, skipfooter=3, header=None, usecols=(0, 2)
+  "../data/raw/fig2.2/Bachelors2012-13.xlsx", engine="calamine", skiprows=4, skipfooter=3, header=None, usecols=(0, 2)
 )
 bachelors2012_13.rename(columns={0: "Field of study and gender", 2: "Total"}, inplace=True)
-bachelors2013_14 = pd.read_excel("./data/raw/fig2.2/Bachelors2013-14.xlsx", **read_params_skip3)
+bachelors2013_14 = pd.read_excel("../data/raw/fig2.2/Bachelors2013-14.xlsx", **read_params_skip3)
 ## GENERATED SUMMARY TABLES
 read_params_for_generated = {  # type: ignore
   "engine": "calamine",
   "skiprows": 4,
   "skipfooter": 4,
 }
-bachelors2014_15 = pd.read_excel("./data/raw/fig2.2/Bachelors2014-15.xlsx", **read_params_for_generated)
-bachelors2015_16 = pd.read_excel("./data/raw/fig2.2/Bachelors2015-16.xlsx", **read_params_for_generated)
-bachelors2016_17 = pd.read_excel("./data/raw/fig2.2/Bachelors2016-17.xlsx", **read_params_for_generated)
-bachelors2017_18 = pd.read_excel("./data/raw/fig2.2/Bachelors2017-18.xlsx", **read_params_for_generated)
-bachelors2018_19 = pd.read_excel("./data/raw/fig2.2/Bachelors2018-19.xlsx", **read_params_for_generated)
-bachelors2019_20 = pd.read_excel("./data/raw/fig2.2/Bachelors2019-20.xlsx", **read_params_for_generated)
-bachelors2020_21 = pd.read_excel("./data/raw/fig2.2/Bachelors2020-21.xlsx", **read_params_for_generated)
-bachelors2021_22 = pd.read_excel("./data/raw/fig2.2/Bachelors2021-22.xlsx", **read_params_for_generated)
-bachelors2022_23 = pd.read_excel("./data/raw/fig2.2/Bachelors2022-23.xlsx", **read_params_for_generated)
+bachelors2014_15 = pd.read_excel("../data/raw/fig2.2/Bachelors2014-15.xlsx", **read_params_for_generated)
+bachelors2015_16 = pd.read_excel("../data/raw/fig2.2/Bachelors2015-16.xlsx", **read_params_for_generated)
+bachelors2016_17 = pd.read_excel("../data/raw/fig2.2/Bachelors2016-17.xlsx", **read_params_for_generated)
+bachelors2017_18 = pd.read_excel("../data/raw/fig2.2/Bachelors2017-18.xlsx", **read_params_for_generated)
+bachelors2018_19 = pd.read_excel("../data/raw/fig2.2/Bachelors2018-19.xlsx", **read_params_for_generated)
+bachelors2019_20 = pd.read_excel("../data/raw/fig2.2/Bachelors2019-20.xlsx", **read_params_for_generated)
+bachelors2020_21 = pd.read_excel("../data/raw/fig2.2/Bachelors2020-21.xlsx", **read_params_for_generated)
+bachelors2021_22 = pd.read_excel("../data/raw/fig2.2/Bachelors2021-22.xlsx", **read_params_for_generated)
+bachelors2022_23 = pd.read_excel("../data/raw/fig2.2/Bachelors2022-23.xlsx", **read_params_for_generated)
 
 
 def tidy_method_1(df: pd.DataFrame, year: int) -> pd.DataFrame:
@@ -297,9 +297,9 @@ def clean_field_of_study(df):
 
 all_years_df = clean_field_of_study(all_years_df)
 all_years_df = all_years_df.drop(columns=["CIP Code"])
-# all_years_df.to_csv("./data/processed/Bachelors2000-23.csv", encoding="utf8")
+# all_years_df.to_csv("../data/processed/Bachelors2000-23.csv", encoding="utf8")
 
-se_general = pd.read_excel("./data/raw/fig2.2/Bachelors1966-2012.xlsx", engine="calamine", skiprows=2, skipfooter=9)
+se_general = pd.read_excel("../data/raw/fig2.2/Bachelors1966-2012.xlsx", engine="calamine", skiprows=2, skipfooter=9)
 
 se_general.rename(columns={"Academic year ending": "Year", "All fieldsa": "all fields"}, inplace=True)
 se_general = se_general.drop(
@@ -315,7 +315,7 @@ se_general = pd.melt(se_general, id_vars=["Year"], var_name="Field of Study", va
 se_general.dropna(inplace=True)
 se_general["Year"] = se_general["Year"].astype(int)
 
-se_compsci = pd.read_excel("./data/raw/fig2.2/ComputerSci1966-2012.xlsx", engine="calamine", skiprows=2, skipfooter=9)
+se_compsci = pd.read_excel("../data/raw/fig2.2/ComputerSci1966-2012.xlsx", engine="calamine", skiprows=2, skipfooter=9)
 se_compsci = se_compsci.iloc[:, :5]
 se_compsci.rename(
   columns={"Unnamed: 0": "Year", "All recipients": "Total", "Male": "Men", "Female": "Women"}, inplace=True
@@ -330,7 +330,7 @@ se_compsci["Field of Study"] = "Computer Science"
 se_compsci["Year"] = se_general["Year"].astype(int)
 
 se_mathematics = pd.read_excel(
-  "./data/raw/fig2.2/Mathematics1966-2012.xlsx", engine="calamine", skiprows=2, skipfooter=9
+  "../data/raw/fig2.2/Mathematics1966-2012.xlsx", engine="calamine", skiprows=2, skipfooter=9
 )
 se_mathematics = se_mathematics.iloc[:, :5]
 se_mathematics.rename(
@@ -451,4 +451,4 @@ plt.legend(handles, labels, title="Field of Study", bbox_to_anchor=(1, 0.75))
 plt.subplots_adjust(bottom=0, left=0, right=1, top=1)
 plt.margins(0.10)
 
-plt.savefig("media/fig2.2.png", dpi=300, bbox_inches="tight")
+plt.savefig("../media/fig2.2.png", dpi=300, bbox_inches="tight")
