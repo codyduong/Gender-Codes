@@ -26,7 +26,7 @@ the data from their original sources. All figures will denote where the data has
 
 ### Figure 2.2 
 <figure>
-  <figcaption>Percentage of bachelors degrees awarded to women in the United States for various disciplines</figcaption>
+  <figcaption>Percentage of bachelors degrees awarded to women in the United States for various disciplines, 1966-2023</figcaption>
   <img src="./media/fig2.2.png" alt="Percentage of bachelors degrees awarded to women in the United States for various disciplines, 1966-2023">
 </figure>
 
@@ -47,11 +47,24 @@ The data used is as follows, and is available in the raw format at [`./data/fig2
   <!-- - 1999-00 to 2001-02 use CIPS edition 1990
   - 2002-03 to 2008-09 use CIPS edition 2000
   - 2009-10 to 2018-19 use CIPS edition 2010 -->
-- 2014-2023, IPEDs Completions, generated manually through Summary Tables.
+- 2014-2023, IPEDs Completions, retrieved/generated through Summary Tables.
 
 I have a fully processed dataset for consumption at [`./data/fig2.2/processed/Bachelors2000-23.csv`](./data/fig2.2/processed/Bachelors2000-23.csv)
 which contains IPEDs data from the end of academic year 2000 to 2023. The reason it doesn't include earlier data is because
-NSF S&E Degree data 1996-2012, is not broken out by similiar CIPs. Feel free to use this dataset.
+NSF S&E Degree data 1996-2012, is not broken out by similiar CIPs. 
+
+**This dataset kinda sucks, I don't recommend using it**
+
+Use this chart with this citation:
+```bibtex
+@misc{Duong_chart,
+  author = {Duong, Cody},
+  title = {{Percentage of bachelors degrees awarded to women in the United States for various disciplines, 1966-2023}},
+  url = {https://github.com/codyduong/Gender-Codes/tree/master/media/fig2.2.png},
+  year = 2024
+}
+```
+> Duong, C. (2025). Percentage of bachelors degrees awarded to women in the United States for various disciplines, 1966-2023 [Graph]. https://github.com/codyduong/Gender-Codes/tree/master/media/fig2.2.png
 
 ### Figure 2.3
 TODO
@@ -60,6 +73,48 @@ TODO
 TODO
 
 ### Figure 2.5
+
+<figure>
+  <figcaption>Computer science degrees conferred in the United States, 1966-2023</figcaption>
+  <img src="./media/fig2.5.png" alt="Computer science degrees conferred in the United States, 1966-2023">
+</figure>
+
+The raw data used:
+- 1966-2012: National Science Foundation (NSF), *Science and Engineering (S&E) Degrees 1966-2012*
+- 2012-2023: IPEDs Completions, retrieved/generated through Summary Tables.
+
+The processed data can be found in two formats, depending on your usage:
+- [Computer Science Degrees Award Level, and Gender Conferred by Year, (1966-2023)](./data/fig2.5/processed/Computer%20Science%20Degrees%20Award%20Level,%20and%20Gender%20Conferred%20by%20Year%20(1966-2023).csv)
+- [Computer Science Degrees Conferred by Year, Award Level, and Gender (1966-2023)](./data/fig2.5/processed/Computer%20Science%20Degrees%20Conferred%20by%20Year,%20Award%20Level,%20and%20Gender%20(1966-2023).csv)
+
+Use this chart/data with this citation:
+```bibtex
+@misc{Duong_chart,
+  author = {Duong, Cody},
+  title = {{Computer science degrees conferred in the United States, 1966-2023}},
+  url = {https://github.com/codyduong/Gender-Codes/tree/master/media/fig2.5.png},
+  year = 2024
+}
+
+@misc{Duong_dataset1,
+  author = {Duong, Cody},
+  title = {{Computer Science Degrees (Award Level, and Gender) Conferred by Year, (1966-2023)}},
+  url = {https://github.com/codyduong/Gender-Codes/tree/master/data/fig2.5/processed/Computer%20Science%20Degrees%20Award%20Level,%20and%20Gender%20Conferred%20by%20Year%20(1966-2023).csv},
+  year = 2024
+}
+
+@misc{Duong_dataset2,
+  author = {Duong, Cody},
+  title = {{Computer Science Degrees Conferred by Year, Award Level, and Gender (1966-2023)}},
+  url = {https://github.com/codyduong/Gender-Codes/tree/master/data/fig2.5/processed/Computer%20Science%20Degrees%20Conferred%20by%20Year,%20Award%20Level,%20and%20Gender%20(1966-2023).csv},
+  year = 2024
+}
+```
+> Duong, C. (2025). Computer science degrees conferred in the United States, 1966-2023, (1966-2023) [Graph]. https://github.com/codyduong/Gender-Codes/tree/master/data/fig2.5/processed/Computer%20Science%20Degrees%20Award%20Level,%20and%20Gender%20Conferred%20by%20Year%20(1966-2023).csv
+>
+> Duong, C. (2025). Computer Science Degrees (Award Level, and Gender) Conferred by Year, (1966-2023) [Data set]. https://github.com/codyduong/Gender-Codes/tree/master/data/fig2.5/processed/Computer%20Science%20Degrees%20Award%20Level,%20and%20Gender%20Conferred%20by%20Year%20(1966-2023).csv
+>
+> Duong, C. (2025). Computer Science Degrees Conferred by Year, Award Level, and Gender (1966-2023) [Data set]. https://github.com/codyduong/Gender-Codes/tree/master/data/fig2.5/processed/Computer%20Science%20Degrees%20Conferred%20by%20Year,%20Award%20Level,%20and%20Gender%20(1966-2023).csv
 
 ### Figure 2.9
 TODO
