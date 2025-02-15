@@ -39,7 +39,7 @@ Interestingly Computer Science & Mathematics are combined in these publications.
 
 Since S&E does not go up to present day, I combined various data sources.
 
-The data used is as follows, and is available in the raw format at [`./data/raw/fig2.2/`](./data/raw/fig2.2/)
+The data used is as follows, and is available in the raw format at [`./data/fig2.2/raw/`](./data/fig2.2/raw/)
 - 1966-1998: National Science Foundation (NSF), *Science and Engineering (S&E) Degrees 1966-2012*
 - ~~1999: IPEDs Completions: *Awards/degrees conferred by program (2-digit CIP code), award level, race/ethnicity, and gender*~~
   This specific year did not have this publication, it does have by 6-digit CIP code, but I am not wrangling this for one year of data.
@@ -50,7 +50,7 @@ The data used is as follows, and is available in the raw format at [`./data/raw/
   - 2009-10 to 2018-19 use CIPS edition 2010 -->
 - 2014-2023, IPEDs Completions, generated manually through Summary Tables.
 
-I have a fully processed dataset for consumption at [`./data/processed/fig2.2/Bachelors2000-23.csv`](./data/processed/fig2.2/Bachelors2000-23.csv)
+I have a fully processed dataset for consumption at [`./data/fig2.2/processed/Bachelors2000-23.csv`](./data/fig2.2/processed/Bachelors2000-23.csv)
 which contains IPEDs data from the end of academic year 2000 to 2023. The reason it doesn't include earlier data is because
 NSF S&E Degree data 1996-2012, is not broken out by similiar CIPs. Feel free to use this dataset.
 
@@ -60,5 +60,9 @@ TODO
 ### Figure 2.4
 TODO
 
+### Figure 2.5
+
 ### Figure 2.9
 TODO
+
+### Figure 13.2
