@@ -1,12 +1,9 @@
 # Gender Codes: Why Women are Leaving Computing, Updated Figures
 
-This repository is an updated understanding of the figures and charts from the
-IEEE 2010 Publication, *Gender Codes: Why Women Are Leaving Computing* 
-(ISBN: 978-0-470-59719-4). 
+An updated understanding of figures, charts, and tables from 
+*Gender Codes: Why Women Are Leaving Computing* (ISBN: 978-0-470-59719-4)
 
 Skip to the [figures](#Figures)
-
-Skip to the [other figures](#other-figures)
 
 ## Development
 
@@ -16,12 +13,23 @@ Python tooling managed by [`uv`](https://github.com/astral-sh/uv).
 uv sync
 ```
 
+## License
+
+This repository is MIT Licensed. Feel free to copy/reproduce these charts or
+datasets with credit.
+
+All data that was ingested has been preserved here,
+but I highly recommend if you are not using my processed data to instead receive
+the data from their original sources (and cite them appropriately). All figures
+will denote where the data has come from. 
+
 ## Figures
 
 ### Figure 2.2 
-Percentage of bachelors degrees awarded to women in the United States, 1966-2023
-
-![Percentage of bachelors degrees awarded to women in the United States, 1966-2023](./media/fig2.2.png)
+<figure>
+  <figcaption>Percentage of bachelors degrees awarded to women in the United States for various disciplines</figcaption>
+  <img src="./media/fig2.2.png" alt="Percentage of bachelors degrees awarded to women in the United States for various disciplines, 1966-2023">
+</figure>
 
 Note the original figure 2.2 in the book used National Science Foundation (NSF), *Science and Engineering (S&E) Degrees 1966-2006*. 
 The latest version I could find of this data was: *NSF S&E Degrees 1966-2012*
@@ -41,6 +49,10 @@ The data used is as follows, and is available in the raw format at [`./data/raw/
   - 2002-03 to 2008-09 use CIPS edition 2000
   - 2009-10 to 2018-19 use CIPS edition 2010 -->
 - 2014-2023, IPEDs Completions, generated manually through Summary Tables.
+
+I have a fully processed dataset for consumption at [`./data/processed/fig2.2/Bachelors2000-23.csv`](./data/processed/fig2.2/Bachelors2000-23.csv)
+which contains IPEDs data from the end of academic year 2000 to 2023. The reason it doesn't include earlier data is because
+NSF S&E Degree data 1996-2012, is not broken out by similiar CIPs. Feel free to use this dataset.
 
 ### Figure 2.3
 TODO
