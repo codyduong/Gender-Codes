@@ -300,7 +300,7 @@ def clean_field_of_study(df):
 
 all_years_df = clean_field_of_study(all_years_df)
 all_years_df = all_years_df.drop(columns=["CIP Code"])
-all_years_df = all_years_df.reset_index()
+all_years_df = all_years_df.reset_index(drop=True)
 all_years_df.to_csv(f"{FILE}/../data/fig2.2/processed/Bachelors2000-23.csv", encoding="utf8")
 
 se_general = pd.read_excel(f"{FILE}/../data/fig2.2/raw/Bachelors1966-2012.xlsx", engine="calamine", skiprows=2, skipfooter=9)
