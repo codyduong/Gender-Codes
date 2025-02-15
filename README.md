@@ -19,9 +19,9 @@ uv sync
 ## Figures
 
 ### Figure 2.2 
-Percentage of bachelors degrees awarded to women in the United States, 1996-2023
+Percentage of bachelors degrees awarded to women in the United States, 1966-2023
 
-![Percentage of bachelors degrees awarded to women in the United States, 1996-2023](./media/fig2.2.png)
+![Percentage of bachelors degrees awarded to women in the United States, 1966-2023](./media/fig2.2.png)
 
 Note the original figure 2.2 in the book used National Science Foundation (NSF), *Science and Engineering (S&E) Degrees 1966-2006*. 
 The latest version I could find of this data was: *NSF S&E Degrees 1966-2012*
