@@ -158,7 +158,7 @@ aggregate["compsci_percent:women"] = ((aggregate["compsci:women"] / aggregate["a
 aggregate["compsci_percent:men"] = ((aggregate["compsci:men"] / aggregate["all:men"]) * 100).round(2)  # type: ignore
 
 aggregate.to_csv(
-  f"{FILE}/../data/fig13.2/processed/Proportion of Undergraduates earning Computer Science Degrees by Gender, 1966-2023.csv",
+  f"{FILE}/../data/fig13.2/processed/Proportion of CS graduates by gender in the United States, 1966-2023.csv",
   encoding="utf8",
 )
 
@@ -239,7 +239,7 @@ handles, labels = plt.gca().get_legend_handles_labels()
 
 plt.xlabel("Year")  # type: ignore
 plt.ylabel("% of Gender Graduating with CS BS Degree")  # type: ignore
-plt.title("Proportion of CS Graduates by Gender in the United States, 1966-2023")  # type: ignore
+plt.title("Proportion of CS undergraduates by gender in the United States, 1966-2023")  # type: ignore
 
 plt.legend(  # type: ignore
   handles=handles,

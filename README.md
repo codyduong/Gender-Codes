@@ -122,7 +122,7 @@ TODO
 ### Figure 13.2
 
 <figure>
-  <figcaption>Proportion of CS Graduates by Gender in the United States, 1966-2023</figcaption>
+  <figcaption>Proportion of CS undergraduates by gender in the United States, 1966-2023</figcaption>
   <img src="./media/fig13.2.png" alt="Computer science degrees conferred in the United States, 1966-2023">
 </figure>
 
@@ -131,24 +131,24 @@ The raw data used:
 - 2012-2023: IPEDs Completions, retrieved/generated through Summary Tables.
 
 The processed data::
-- [Proportion of Undergraduates earning Computer Science Degrees by Gender, 1966-2023](./data/fig13.2/processed/Proportion%20of%20Undergraduates%20earning%20Computer%20Science%20Degrees%20by%20Gender,%201966-2023.csv)
+- [Proportion of CS graduates by gender in the United States, 1966-2023](./data/fig13.2/processed/Proportion%20of%20CS%20graduates%20by%20gender%20in%20the%20United%20States,%201966-2023.csv)
 
 Use this chart/data with this citation:
 ```bibtex
 @misc{Duong_chart,
   author = {Duong, Cody},
-  title = {{Proportion of CS Graduates by Gender in the United States, 1966-2023}},
+  title = {{Proportion of CS undergraduates by gender in the United States, 1966-2023}},
   url = {https://github.com/codyduong/Gender-Codes/tree/master/media/fig13.2.png},
   year = 2025
 }
 
 @misc{Duong_dataset1,
   author = {Duong, Cody},
-  title = {{Proportion of Undergraduates earning Computer Science Degrees by Gender, 1966-2023}},
-  url = {https://github.com/codyduong/Gender-Codes/tree/master/data/fig13.2/processed/Proportion%20of%20Undergraduates%20earning%20Computer%20Science%20Degrees%20by%20Gender,%201966-2023.csv},
+  title = {{Proportion of CS graduates by gender in the United States, 1966-2023}},
+  url = {https://github.com/codyduong/Gender-Codes/tree/master/data/fig13.2/processed/Proportion%20of%20CS%20graduates%20by%20gender%20in%20the%20United%20States,%201966-2023.csv},
   year = 2025
 }
 ```
-> Duong, C. (2025). Proportion of CS Graduates by Gender in the United States, 1966-2023 [Graph]. https://github.com/codyduong/Gender-Codes/tree/master/media/fig13.2.png
+> Duong, C. (2025). Proportion of CS undergraduates by gender in the United States, 1966-2023 [Graph]. https://github.com/codyduong/Gender-Codes/tree/master/media/fig13.2.png
 >
-> Duong, C. (2025). Proportion of Undergraduates earning Computer Science Degrees by Gender, 1966-2023 [Data set]. https://github.com/codyduong/Gender-Codes/tree/master/data/fig13.2/processed/Proportion%20of%20Undergraduates%20earning%20Computer%20Science%20Degrees%20by%20Gender,%201966-2023.csv
+> Duong, C. (2025). Proportion of CS graduates by gender in the United States, 1966-2023 [Data set]. https://github.com/codyduong/Gender-Codes/tree/master/data/fig13.2/processed/Proportion%20of%20CS%20graduates%20by%20gender%20in%20the%20United%20States,%201966-2023.csv
