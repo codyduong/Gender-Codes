@@ -44,8 +44,13 @@ se_compsci.rename(
   inplace=True,
 )
 se_compsci.dropna(how="all", axis="columns", inplace=True)
-se_compsci.dropna(inplace=True)
-se_compsci = se_compsci.astype(int)
+# Doctoral has data for 1999, but no other award types
+se_compsci.dropna(inplace=True, how="all")
+# se_compsci = se_compsci.astype(int)
+se_compsci["year"] = se_compsci["year"].astype(int)
+se_compsci["doctorate_recipients:total"] = se_compsci["doctorate_recipients:total"].astype(int)
+se_compsci["doctorate_recipients:men"] = se_compsci["doctorate_recipients:men"].astype(int)
+se_compsci["doctorate_recipients:women"] = se_compsci["doctorate_recipients:women"].astype(int)
 
 
 def tidy_ipeds(df: pd.DataFrame, year: int) -> pd.DataFrame:
@@ -145,6 +150,7 @@ combined_melted["degree_type"] = combined_melted["degree_type"].map(lambda x: x.
 combined_melted = combined_melted.groupby(["year", "degree_type"], as_index=False).agg(
   {"total": "first", "women": "first", "men": "first"}
 )
+combined_melted.dropna(inplace=True, how="any")
 combined_melted["total"] = combined_melted["total"].astype(int)
 combined_melted["women"] = combined_melted["women"].astype(int)
 combined_melted["men"] = combined_melted["men"].astype(int)
@@ -154,7 +160,7 @@ combined_melted.to_csv(
 )
 
 left_half = combined_melted[combined_melted["year"] < 1999]
-right_half = combined_melted[combined_melted["year"] > 1999]
+right_half = combined_melted[combined_melted["year"] >= 1999]
 
 degree_types = ("bachelors", "masters", "doctorate")
 
