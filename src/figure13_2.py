@@ -233,6 +233,7 @@ plt.xlim(1966, 2023)  # type: ignore
 plt.ylim(0, 12)  # type: ignore
 plt.xticks(np.arange(1966, 2024, 2), minor=False)  # type: ignore
 plt.xticks(np.arange(1966, 2024, 1), minor=True)  # type: ignore
+plt.yticks(ticks=np.arange(0, 13, 1), labels=[f"{i:.1f}%" for i in np.arange(0,13,1)]) # type: ignore
 plt.grid(axis="y", linestyle="--", alpha=0.7)  # type: ignore
 plt.xticks(rotation=90)  # type: ignore
 handles, labels = plt.gca().get_legend_handles_labels()
@@ -259,7 +260,7 @@ for l in axl2.lines[3:]:  # skip first 3, thats the left half of each line  # no
   y = l.get_ydata()
   if len(y) > 0:  # type: ignore
     axl2.annotate(  # type: ignore
-      f"{y[-1]}%",  # type: ignore
+      f"{y[-1]:.2f}%",  # type: ignore
       xy=(1.01, y[-1]),  # type: ignore
       xycoords=("axes fraction", "data"),
       ha="left",
